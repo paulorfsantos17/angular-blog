@@ -1,0 +1,37 @@
+.container__big__card {
+  width: 400px;
+  height: 500px;
+
+  border-radius: 6px;
+  margin-left: .6rem;
+  margin-right: .6rem;
+  overflow: hidden;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.photo__big_card {
+  width: 100%;
+  min-width: 400px;
+}
+
+.photo__big_card > img {
+  width: 100%;
+
+}
+
+.title__big__card > a {
+  margin-top: 0.6rem;
+  font-size: 1.25rem;
+}
+
+.description__big__card {
+  margin-top: 0.6rem;
+}
+
+.description__big__card > a > p {
+
+  color: gray;
+}
