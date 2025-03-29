@@ -3,26 +3,23 @@
 <div class="container__articles">
   <div class="articles__main">
     <app-big-card
-      id="1"
-      photoCover="https://picsum.photos/1000/500"
-      cardTitle="Saiu a nova versão do angular"
-      cardDescription="lorem"
+      id={{posts[0].id}}
+      photoCover={{posts[0].photoCover}}
+      cardTitle={{posts[0].title}}
+      cardDescription={{posts[0].description}}
     > </app-big-card>
   </div>
-  <div class="articles__other">
+  <div 
+    class="articles__other"
+  >
     <app-small-card
-      id="2"
-      cardTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit."
-      photoCover="https://picsum.photos/1000/500"
+     *ngFor="let post of posts | slice:1:4"
+      id={{post.id}}
+      cardTitle={{post.title}}
+      photoCover={{post.photoCover}}
     > </app-small-card>
-    <app-small-card
-      cardTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit."
-      photoCover="https://picsum.photos/1000/500"
-    > </app-small-card>
-    <app-small-card
-      cardTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit."
-      photoCover="https://picsum.photos/1000/500"
-    > </app-small-card>
+  
+    
   </div>
 </div>
 </div>
