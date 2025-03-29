@@ -1,0 +1,22 @@
+.container__small__card {
+  min-width:  500px;
+  max-width: 600px;
+}
+
+.container__small__card__content {
+  display: flex;
+  gap: 1rem
+} 
+
+.photo__small__card >  img {
+  width: 180px;
+  min-height: 100px;
+}
+.title__small__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container__small__card__divider {
+  margin-top: 0.6rem;
+}

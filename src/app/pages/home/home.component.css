@@ -1,0 +1,16 @@
+.container__home {
+  display: flex;
+  flex-direction: column;
+
+}
+.container__articles {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.articles__other {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
